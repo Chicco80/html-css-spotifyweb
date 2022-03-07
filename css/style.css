@@ -24,10 +24,12 @@ body{
 aside{
     width: 250px;
     background-color: #000000;
+   
 
 }
 main{
     width: calc(100% - 250px);
+    
 }
 .main-container{
     height: 100%;
@@ -43,24 +45,96 @@ main{
     position: fixed;
     z-index: 1000;
     background-color: rgba(0,0,0,0.3);
-    position: relative;
+    
 }
 /* upgrade */
 .upgrade{
-    position: absolute;
-    top:30px;
-    right: 20px;
     padding: 10px;
-    border-radius: 30px;
     font-size: 14px;
+    display: flex;
+    justify-content: ;
+   
 }
+
 .upgrade a{
     color:white;
     text-decoration: none;
     text-transform: uppercase;
-   
-
+    padding: 15px;
+    line-height: 80px;
+    border: 1px solid white;
+    border-radius: 20px;
+    
 }
+/* aside */
+aside .logo{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    
+}
+aside .logo img{
+    height: 50%;
+}
+/* nav-left */
+.nav-left img{
+ height: 30px;
+ vertical-align: middle;
+}
+.nav-left .contact{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    
+}
+.nav-left .contact a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px;
+    
+}
+.nav-left .contact li{
+    margin-bottom: 20px;
+}
+/* playlist */
+.playlist{
+    padding: 10px; 
+ 
+    text-transform:capitalize;
+}
+.playlist i{
+    font-size: 40px;
+    margin-top: 10px;
+    vertical-align: middle;
+    color: white;
+}
+.playlist a{
+    color: white;
+    text-decoration: none;  
+}
+.playlist li{
+    margin-bottom: 20px;
+}
+/* installa app */
+.install{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 28%;
+    
+}
+.install img{
+    height: 15%;
+}
+
+
+    
+
+
 footer{
     width: 100%;
     height: 100px;
@@ -69,3 +143,75 @@ footer{
     bottom:0;
     left:0;
 }
+.nav-bottom{
+    display: flex;
+    height: 100%;
+}
+/* nav-bottom left */
+.nav-bottom-left{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-bottom-left .brano{
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    
+}
+.nav-bottom-left .brano img{
+    width: 100%;
+    
+}
+.nav-bottom-left .icons{
+    padding-left: 25px;
+}
+/* bottom center */
+.nav-bottom-center{
+    width: 50%;
+    line-height: 50px;
+
+}
+.nav-bottom-center .command{
+    height: 50%;
+}
+
+.nav-bottom-right{
+    width: 25%;
+
+}
+.command .command-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style-type: none;
+    
+}
+.command .command-top .fa-solid{
+    font-size: 25px;
+    color: white;
+    
+}
+.command .command-bottom{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+
+}
+ /* bottom-right */
+
+ .list-right{
+     display: flex;
+     justify-content: space-between;
+     line-height: 100px;
+     list-style-type: none;
+ }
+
+ .list-right .fa-solid{
+     color: white;
+ }
