@@ -70,11 +70,21 @@ main{
     display: flex;
     justify-content: center;
     gap: 20px;
+    
 }
 .nav-main .list-main a{
-    color: lightgray;
+    color:#808080 ;
     text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
 }
+.nav-main .list-main a:hover{
+    color:white;
+    padding-bottom:5px;
+    border-bottom: 1px solid limegreen;
+
+}
+
 /* albums */
 h2{
     padding: 10px;
@@ -168,6 +178,7 @@ aside .logo{
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
+    overflow-y: auto;
 
 }
 aside .logo img{
@@ -235,7 +246,7 @@ aside .logo img{
 
 .user{
     display: flex;
-    border-top: 3px solid lightgrey;
+    border-top: 3px solid #808080 ;
     padding-top: 10px;
     gap: 5px;
     text-transform: capitalize;
