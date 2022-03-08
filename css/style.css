@@ -6,6 +6,7 @@
 body{ 
     background-color:#080B12;
     color: white;
+   
 }
 
 .debug{
@@ -21,12 +22,7 @@ body{
     background-color: #141922;
     display: flex;
 }
-aside{
-    width: 250px;
-    background-color: #000000;
-   
 
-}
 main{
     width: calc(100% - 250px);
     
@@ -45,28 +41,33 @@ main{
     position: fixed;
     z-index: 1000;
     background-color: rgba(0,0,0,0.3);
-    
+    position: relative;
 }
 /* upgrade */
 .upgrade{
     padding: 10px;
     font-size: 14px;
-    display: flex;
-    justify-content: ;
-   
+    
 }
 
 .upgrade a{
+    position: absolute;
+    top: 30px;
+    right: 20px;
     color:white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 15px;
-    line-height: 80px;
+     padding: 5px; 
     border: 1px solid white;
     border-radius: 20px;
     
 }
 /* aside */
+aside{
+    width: 250px;
+    background-color: #000000;
+   height: 100%
+}
 aside .logo{
     width: 100%;
     height: 80px;
@@ -120,16 +121,21 @@ aside .logo img{
     margin-bottom: 20px;
 }
 /* installa app */
-.install{
+.install-content{
     display:flex;
     flex-direction: column;
-    justify-content: flex-end;
-    height: 28%;
+    justify-content: space-between; 
     
 }
-.install img{
+.install i{
     height: 15%;
 }
+ .user{
+    height: 60px;
+     width: 50px;
+      
+}
+
 
 
     
@@ -207,7 +213,7 @@ footer{
 
  .list-right{
      display: flex;
-     justify-content: space-between;
+     justify-content: space-around;
      line-height: 100px;
      list-style-type: none;
  }
