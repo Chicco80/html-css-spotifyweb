@@ -31,7 +31,7 @@ main{
     height: 100%;
     width: 100%;
     overflow-y: auto;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 /* barra sopra */
 
@@ -47,7 +47,6 @@ main{
 .upgrade{
     padding: 10px;
     font-size: 14px;
-    
 }
 
 .upgrade a{
@@ -61,6 +60,20 @@ main{
     border: 1px solid white;
     border-radius: 20px;
     
+}
+/* main */
+.nav-main{
+    width: 100%;
+}
+.nav-main .list-main{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.nav-main .list-main a{
+    color: lightgray;
+    text-transform: uppercase;
 }
 /* aside */
 aside{
