@@ -239,9 +239,7 @@ aside .logo img{
     justify-content: flex-end;
     
 }
-.install{
-    
-}
+
 
 
 .user{
@@ -319,9 +317,16 @@ footer{
 }
 .command .command-top .fa-solid{
     font-size: 25px;
-    color: white;
+    color: #808080;
+    transition: all 1s ease;
 
 }
+.command .command-top .fa-solid:hover{
+    color: white;
+    font-size: 28px;
+
+}
+
 .command .command-bottom{
     display: flex;
     justify-content: space-around;
