@@ -354,7 +354,8 @@ footer{
 
  .list-right{
      display: flex;
-     justify-content: space-around;
+     justify-content: flex-end;
+     gap: 10px;
      line-height: 100px;
      list-style-type: none;
  }
@@ -389,5 +390,36 @@ footer{
   
     .round-container{
         padding-bottom: 50px;
+    }
+    .command .command-top .fa-solid{
+        font-size:20px ;
+
+    }
+    .command .command-top .fa-solid:hover{
+        font-size:22px ;
+
+    }
+    .command .command-top{
+        gap: 35px;
+    }
+    .command .command-bottom{
+        justify-content: center;
+        gap: 15px;
+    }
+    .time-end,
+    .time-start p{
+        font-size: 12px;
+    }
+    .list-right i{
+        font-size: 14px;
+    }
+    
+ }/* media 2 */
+ @media screen and (max-width:576px) {
+    .card,
+    .card-description,
+    .round-card,
+    .row-top{
+        width: calc(100% / 2 - 10px);
     }
  }
