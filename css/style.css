@@ -452,6 +452,12 @@ input[type="range"]::-webkit-slider-thumb {
     .playlist{
         margin-top: 15px;
     }
+    .round-description{
+        gap: 10px;
+    }
+    .round-description .round-title{
+        width: calc(100% / 4 - 10px);
+    }
 
    
 
@@ -479,9 +485,12 @@ input[type="range"]::-webkit-slider-thumb {
     .row-top{
         width: calc(100% / 4 - 10px);
     }
-  
-    .round-container{
-        padding-bottom: 50px;
+    .round-description{
+        gap:10px;
+        width: 100%;
+    }
+    .round-description .round-title{
+        width: calc(100% / 4 - 10px);
     }
     .title p{
         font-size: 12px;
@@ -549,6 +558,12 @@ input[type="range"]::-webkit-slider-thumb {
     .user {
         border: none;
         padding-bottom: 20px;
+    }
+    .round-description{
+        gap: 10px;
+    }
+    .round-description .round-title{
+        width: calc(100% / 2 - 10px);
     }
     .nav-bottom-left .icons{
         padding-left:0;
