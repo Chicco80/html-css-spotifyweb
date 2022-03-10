@@ -435,7 +435,7 @@ input[type="range"]::-webkit-slider-thumb {
         width: calc(100% / 4 - 10px);
     }
    
- }
+
 
 /* media2 */
  @media screen and (max-width:768px) {
@@ -530,6 +530,20 @@ input[type="range"]::-webkit-slider-thumb {
     .user {
         border: none;
         padding-bottom: 20px;
+    }
+    .nav-bottom-left .icons{
+        padding-left:0;
+    }
+    .time-end,
+    .time-start p{
+        display: none;
+    }
+    .list-right{
+        padding: 0;
+    }
+    .list-right input{
+        width: 80px;
+        
     }
     
    
