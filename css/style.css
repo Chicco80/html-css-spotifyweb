@@ -87,7 +87,7 @@ main{
 .nav-main .list-main a:hover{
     color:white;
     padding-bottom:5px;
-    border-bottom: 1px solid limegreen;
+    border-bottom: 2px solid limegreen;
 
 }
 
@@ -138,7 +138,7 @@ h2{
     left:50%;
     transform: translate(-50%, -50%);
     color:#808080;
-    font-size: 25px;
+    font-size: 35px;
     visibility: hidden;
     transition: 0.3s;
 }
@@ -213,7 +213,7 @@ aside{
     height: 100%;
 }
 aside a:hover{
-    border-left: 1px solid greenyellow;
+    border-left: 2px solid greenyellow;
 }
 
 aside .logo{
@@ -229,6 +229,9 @@ aside .logo{
 aside .logo img{
     height: 40px;
 
+}
+aside .logo .small-logo{
+    display:none
 }
 /* nav-left */
 .nav-left{
@@ -360,10 +363,16 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 10px;
     list-style-type: none;
+    text-align: center;
 
 }
+.command .command-top li{
+    width: 10%;
+}
+
+
 .command .command-top .fa-solid{
     font-size: 23px;
     color: #808080;
@@ -391,15 +400,44 @@ footer{
      display: flex;
      justify-content: flex-end;
      gap: 10px;
+     padding-right: 10px;
      line-height: 100px;
      list-style-type: none;
  }
+ input[type="range"] {
+    -webkit-appearance: none;
+    background-color:#b2e92e;
+    height:5px;
+    width: 250px;
+}
+ 
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    height: 15px;
+    border-radius: 50%;
+    width: 15px;
+}
 
  .list-right .fa-solid{
      color: white;
  }
+ .list-right input{
+     width: 100px;
+     
+ }
  /* mediaquery */
+ @media screen and (max-width:1000px){
+    .card,
+    .card-description,
+    .round-card,
+    .row-top{
+        width: calc(100% / 4 - 10px);
+    }
+   
+ }
 
+/* media2 */
  @media screen and (max-width:768px) {
     .nav-main .list-main{
         width: 100%;
@@ -453,7 +491,7 @@ footer{
     }
     
  }
- /* media 2 */
+ /* media 3 */
  @media screen and (max-width:576px) {
     .card,
     .card-description,
@@ -461,4 +499,42 @@ footer{
     .row-top{
         width: calc(100% / 2 - 10px);
     }
- }
+    aside{
+        width: 50px;
+        background-color: #000000;
+        height: 100%;
+    }
+    main{
+        width: calc(100% - 50px);
+    
+    }
+    .logo img{
+        display: none;
+    }
+    aside .logo .small-logo{
+        display:block;
+        width: 30px;
+    }
+    .nav-left .contact span{
+        display: none;
+    }
+    .playlist li, .playlist-title{
+        display: none;
+    }
+    .install span{
+        display: none;
+    }
+    .user p{
+        display: none;
+    }
+    .user {
+        border: none;
+        padding-bottom: 20px;
+    }
+    
+   
+
+   
+    
+
+ 
