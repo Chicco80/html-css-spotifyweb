@@ -7,7 +7,18 @@ body{
     background-color:#080B12;
     color: white;
     min-width: 576px;
-
+    
+}
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-track{
+    background:white;
+}
+::-webkit-scrollbar-thumb{
+    background:  #b2e92e; 
+   
 }
 
 .debug{
@@ -457,6 +468,9 @@ input[type="range"]::-webkit-slider-thumb {
     .row-top{
         width: calc(100% / 4 - 10px);
     
+    }
+    .album{
+        justify-content: flex-start;
     }
     aside .logo img{
         height: 35px;
